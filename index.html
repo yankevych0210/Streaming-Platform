@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/resset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <title>Streaming Platform</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__box">
+          <div class="header-auth">
+            <button class="header-auth__btn">
+              <span>Log in</span>
+            </button>
+          </div>
+          <div class="header__content">
+            <div class="header__left">
+              <h1 class="header__title">It's a hot place for your streaming fantasy.</h1>
+              <p class="header__subtitle">
+                It's a free space for watching streams and chatting with alluring people.
+              </p>
+            </div>
+
+            <div class="header-slider swiper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="header__right" id="desktop-form">
+                      <div class="signup-form">
+                        <button class="submit-btn">
+                          <span class="submit-icon">
+                            <svg viewBox="0 0 48 48">
+                              <clipPath id="g">
+                                <path
+                                  d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"
+                                ></path>
+                              </clipPath>
+                              <g clip-path="url(#g)" class="colors">
+                                <path d="M0 37V11l17 13z" fill="#FBBC05"></path>
+                                <path d="M0 11l17 13 7-6.1L48 14V0H0z" fill="#EA4335"></path>
+                                <path d="M0 37l30-23 7.9 1L48 0v48H0z" fill="#34A853"></path>
+                                <path d="M48 48L17 24l-4-3 35-10z" fill="#4285F4"></path>
+                              </g>
+                            </svg>
+                          </span>
+                          Sign in with Google
+                        </button>
+
+                        <div class="divider">or</div>
+
+                        <form action="#" method="POST" class="form">
+                          <div class="form-inputs">
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input
+                                type="email"
+                                id="email"
+                                placeholder="e.g. Alex@email.com"
+                                required
+                              />
+                            </div>
+
+                            <div class="form-group">
+                              <label for="password">Password</label>
+                              <div class="password-input">
+                                <input
+                                  type="password"
+                                  id="password"
+                                  placeholder="8+ characters"
+                                  minlength="8"
+                                  required
+                                />
+                                <button type="button" class="toggle-password">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-eye"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+                                    />
+                                    <path
+                                      d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <button class="submit-btn">
+                            <span class="submit-icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="28"
+                                height="22"
+                                viewBox="0 0 28 22"
+                                fill="none"
+                              >
+                                <path
+                                  d="M0.0875076 3.22125C0.263939 2.44818 0.697654 1.75792 1.31762 1.26354C1.93759 0.769156 2.70706 0.499947 3.50001 0.5H24.5C25.293 0.499947 26.0624 0.769156 26.6824 1.26354C27.3024 1.75792 27.7361 2.44818 27.9125 3.22125L14 11.7245L0.0875076 3.22125ZM7.62939e-06 5.21975V17.6517L10.1553 11.4253L7.62939e-06 5.21975ZM11.8318 12.4525L0.334258 19.4998C0.618329 20.0987 1.06668 20.6047 1.62713 20.9589C2.18757 21.313 2.83706 21.5006 3.50001 21.5H24.5C25.1628 21.5001 25.8121 21.3121 26.3722 20.9577C26.9323 20.6032 27.3803 20.0971 27.664 19.498L16.1665 12.4508L14 13.7755L11.8318 12.4508V12.4525ZM17.8448 11.427L28 17.6517V5.21975L17.8448 11.4253V11.427Z"
+                                  fill="#1A73E8"
+                                />
+                              </svg>
+                            </span>
+                            Sign in with Google
+                          </button>
+                        </form>
+
+                        <p class="terms">
+                          You hereby confirm that you are fully able and competent to access
+                          Livebeam and comply with the Terms of Use & Service, and are at least
+                          eighteen (18) years of age or the age of majority under the law of the
+                          jurisdiction of your residence and the one you are accessing Livebeam
+                          from.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <form action="#" method="POST" class="dedicated-form">
+                      <div class="dedicated-form__field">
+                        <label class="dedicated-form__label">I am</label>
+                        <div class="mydict">
+                          <div class="mydict-radio-group">
+                            <label class="mydict-radio">
+                              <input type="radio" name="radio" class="mydict-radio-input" />
+                              <span class="mydict-radio-label">Male</span>
+                            </label>
+                            <label class="mydict-radio">
+                              <input type="radio" name="radio" class="mydict-radio-input" />
+                              <span class="mydict-radio-label">Female</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dedicated-form__field">
+                        <label for="name" class="dedicated-form__label">My name</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="name"
+                          placeholder="e.g. Alex"
+                          class="dedicated-form__input"
+                          required
+                        />
+                      </div>
+
+                      <div class="dedicated-form__field">
+                        <label for="dob" class="dedicated-form__label">I was born</label>
+                        <input
+                          type="text"
+                          id="dob"
+                          name="dob"
+                          class="dedicated-form__input"
+                          required
+                          placeholder="DD/MM/YYYY"
+                          maxlength="10"
+                        />
+                      </div>
+
+                      <div class="dedicated-form__field dedicated-form__checkbox">
+                        <input
+                          class="ui-checkbox"
+                          type="checkbox"
+                          id="terms"
+                          name="terms"
+                          required
+                        />
+                        <label for="terms">
+                          I have read, understood, and agree to the
+                          <a class="terms-link" href="##">Terms of Use</a>,
+                          <a class="terms-link" href="##">Privacy Policy</a>, and
+                          <a class="terms-link" href="#">Disclosures & Disclaimers</a>.
+                        </label>
+                      </div>
+                      <button class="btn">Sign up now</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="swiper-pagination lines-pagination"></div>
+              </div>
+            </div>
+            <div class="header-right__mobile">
+              <img src="img/phone-mobile.png" alt="phone" />
+              <a href="#dynamic-form" class="btn">Sign up now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="dedicated-mobile">
+          <div class="dedicated-mobile__text">
+            <h1 class="dedicated-space__title">It's a dedicated space for your bold fantasies!</h1>
+            <p class="dedicated-space__subtitle">
+              Hundreds of attractive admirers are already waiting for you here. Don't delay – dive
+              into the world of streaming, flirting, and hot communication right now!
+            </p>
+          </div>
+          <div class="dedicated-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="header__right" id="mobile-form">
+                    <div class="signup-form">
+                      <button class="submit-btn">
+                        <span class="submit-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                          >
+                            <rect
+                              x="7.62939e-06"
+                              width="30"
+                              height="30"
+                              fill="url(#pattern0_0_228)"
+                            />
+                            <defs>
+                              <pattern
+                                id="pattern0_0_228"
+                                patternContentUnits="objectBoundingBox"
+                                width="1"
+                                height="1"
+                              >
+                                <use xlink:href="#image0_0_228" transform="scale(0.00217391)" />
+                              </pattern>
+                              <image
+                                id="image0_0_228"
+                                width="460"
+                                height="460"
+                                xlink:href="data:image/png;base64,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+9AZDCY5M2bOtKFW9QIozoagh+s9FB7W2ldF5OZ196z5bc29z6dd74mqKPahMxhMcu6Q275cnkzt+ipUvmUMDna9h4Kp9dKr0fuNyi2rTpu/xPWeOIhiHzqDwaRAGXXX1LFG9BsAvgqRItd7yD1r7Vox8seUmD89ceq89a73xEkU+9AZDCYF0iGzp44tsvg5DA53vYUKz1rbaAR/EZhbV82Yv5QPcHYjin3oDAaTAq3/1M/0NpAREIwYMHX4CBEdoYqDRKSL622UI+/9FvQ2oC9ZeC9snPfaomTKLuet69yLYh86g8Gk0Jl+z/TEm549xkKnQPUkMWaQ603UPtZaDyIrobKgKCHzeak1mKLYh85gMCncFFI5Z3KlKi4WMVNcz6E9sxb1xuAhCO5LQhY+ceq8ra43Udui2IfOYDApMsbeOeVTnsEJgBwLsVWAKXe9KfYsVEXnizE3a13Px6rP+x2/AhIiUexDZzCYFEnD75leVGK9zxngOAs91lhzGAz4C6MAFPgngGUCWZawzcuePP2vNa43UcdEsQ+dwWBSLIxecHIv25w4UoCjIHY6YPZxvSkK3n8v8h9GZCUgj5q0t/Kpr9y7zvUuyo0o9qEzGEyKnQGnHZgacNLBR0LlSCMYa62t4GPI/LPAO6L6F1X9S0mZt+qxk++vd72J8iOKfegMBpMIwMi7ThyYMMkKVakQ0QpARgEY6HqXWzZtgdcMzHMKfU5Vnk1py3O8xBofUexDZzCYRHsw4s7T9yo2zcNUUAXgaLF2OGD2juJ7oWrtqxCsAuQVgbzswXvZ7Oi7hh/Sibco9qEzGEyidqi4/4tltiG5bwKJIRAZqtAhAh1irQwB7N4i0ldEAvUEFgvbJDCboLpRBOug8rZVvC1G3xYrbxWVpdfwsip9kij2oTMYTKIc6n/zN8sH9940VNT086D9RKUfjPYWla6A7aZiurX+1b73VyNSDtViiElBbRIwKRibgjViAc8AHgDPtv5VdxkjO3cH0Kg0QbRe1dRDdYcI6iHYrsBWKN41qlut4O1MiX39ucn31bn+74XCKYp96IxIBpOIiCjXAnXpiIiIKKgYTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh8YTCIiIh/+fwAAAP//EnytpVp6K2MAAAAASUVORK5CYII="
+                              />
+                            </defs>
+                          </svg>
+                        </span>
+                        Sign in with Google
+                      </button>
+
+                      <div class="divider">or</div>
+
+                      <form action="#" method="POST" class="form">
+                        <div class="form-inputs">
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                              type="email"
+                              id="email"
+                              placeholder="e.g. Alex@email.com"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="password-input">
+                              <input
+                                type="password"
+                                id="password"
+                                placeholder="8+ characters"
+                                minlength="8"
+                                required
+                              />
+                              <button type="button" class="toggle-password">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="currentColor"
+                                  class="bi bi-eye"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+                                  />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+                                  />
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button class="submit-btn">
+                          <span class="submit-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="28"
+                              height="22"
+                              viewBox="0 0 28 22"
+                              fill="none"
+                            >
+                              <path
+                                d="M0.0875076 3.22125C0.263939 2.44818 0.697654 1.75792 1.31762 1.26354C1.93759 0.769156 2.70706 0.499947 3.50001 0.5H24.5C25.293 0.499947 26.0624 0.769156 26.6824 1.26354C27.3024 1.75792 27.7361 2.44818 27.9125 3.22125L14 11.7245L0.0875076 3.22125ZM7.62939e-06 5.21975V17.6517L10.1553 11.4253L7.62939e-06 5.21975ZM11.8318 12.4525L0.334258 19.4998C0.618329 20.0987 1.06668 20.6047 1.62713 20.9589C2.18757 21.313 2.83706 21.5006 3.50001 21.5H24.5C25.1628 21.5001 25.8121 21.3121 26.3722 20.9577C26.9323 20.6032 27.3803 20.0971 27.664 19.498L16.1665 12.4508L14 13.7755L11.8318 12.4508V12.4525ZM17.8448 11.427L28 17.6517V5.21975L17.8448 11.4253V11.427Z"
+                                fill="#1A73E8"
+                              />
+                            </svg>
+                          </span>
+                          Sign in with Google
+                        </button>
+                      </form>
+
+                      <p class="terms">
+                        You hereby confirm that you are fully able and competent to access Livebeam
+                        and comply with the Terms of Use & Service, and are at least eighteen (18)
+                        years of age or the age of majority under the law of the jurisdiction of
+                        your residence and the one you are accessing Livebeam from.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <form action="#" method="POST" id="mobile-form" class="dedicated-form">
+                    <div class="dedicated-form__field">
+                      <label class="dedicated-form__label">I am</label>
+                      <div class="mydict">
+                        <div class="mydict-radio-group">
+                          <label class="mydict-radio">
+                            <input type="radio" name="radio" class="mydict-radio-input" />
+                            <span class="mydict-radio-label">Male</span>
+                          </label>
+                          <label class="mydict-radio">
+                            <input type="radio" name="radio" class="mydict-radio-input" />
+                            <span class="mydict-radio-label">Female</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dedicated-form__field">
+                      <label for="name" class="dedicated-form__label">My name</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="name"
+                        placeholder="e.g. Alex"
+                        class="dedicated-form__input"
+                        required
+                      />
+                    </div>
+
+                    <div class="dedicated-form__field">
+                      <label for="dob" class="dedicated-form__label">I was born</label>
+                      <input
+                        type="text"
+                        id="dob"
+                        name="dob"
+                        class="dedicated-form__input"
+                        required
+                        placeholder="DD/MM/YYYY"
+                        maxlength="10"
+                      />
+                    </div>
+
+                    <div class="dedicated-form__field dedicated-form__checkbox">
+                      <input class="ui-checkbox" type="checkbox" id="terms" name="terms" required />
+                      <label for="terms">
+                        I have read, understood, and agree to the
+                        <a class="terms-link" href="##">Terms of Use</a>,
+                        <a class="terms-link" href="##">Privacy Policy</a>, and
+                        <a class="terms-link" href="#">Disclosures & Disclaimers</a>.
+                      </label>
+                    </div>
+                    <button class="btn">Sign up now</button>
+                  </form>
+                </div>
+              </div>
+              <div class="swiper-pagination lines-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="streamers">
+        <div class="swiper streamers-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/gif-1.gif" alt="streamer" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gif-2.gif" alt="streamer" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gif-3.gif" alt="streamer" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gif-4.gif" alt="streamer" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="about-us" id="about">
+          <h1 class="about-us__title">About</h1>
+          <div class="about-us__content">
+            <p>
+              It's a global <b>streaming platform</b> for communication and meeting incredibly
+              beautiful people. We created an excellent place where you can enjoy your time and
+              <b>find appropriate matches</b> at first.
+            </p>
+            <p>
+              Approximately 80% of our users have already found their lovelies.
+              <b>Watch streams</b> w ithout hindrance and meet someone <b>who interests you.</b>
+            </p>
+          </div>
+          <a href="#dynamic-form" class="btn">Join for free</a>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="why-join">
+          <h1 class="why-join__title">Why join us?</h1>
+          <div class="why-join__block">
+            <div class="why-join__card">
+              <div class="why-join__box">
+                <img src="img/icon-1.png" alt="icon" />
+                <h5>Chat with attractive streamers for free</h5>
+              </div>
+              <p>
+                It's an excellent web platform for streaming. Write messages to the beautiful
+                streamers for free and explore this magical universe of communication!
+              </p>
+            </div>
+            <div class="why-join__card">
+              <div class="why-join__box">
+                <img src="img/icon-2.png" alt="icon" />
+                <h5>Only verified users</h5>
+              </div>
+              <p>
+                We care about the privacy and security of our customers. All accounts are verified
+                so look for an attractive stranger confidently!
+              </p>
+            </div>
+
+            <div class="why-join__empty"></div>
+            <div class="why-join__empty"></div>
+
+            <div class="why-join__card">
+              <div class="why-join__box">
+                <img src="img/icon-3.png" alt="icon" />
+                <h5>Customized search</h5>
+              </div>
+              <p>
+                Match alluring partners for your own preferences. Maybe you will be interested in a
+                hot slender European or shy beautiful Asian? Make your choice…
+              </p>
+            </div>
+            <div class="why-join__card">
+              <div class="why-join__box">
+                <img src="img/icon-4.png" alt="icon" />
+                <h5>Easy to use</h5>
+              </div>
+              <p>
+                Forget about hundreds of annoying notifications and inconvenient use. We have
+                created the platform as easy to use and search as possible. Don't waste your time
+                studying functionality. Just enjoy!
+              </p>
+            </div>
+          </div>
+
+          <div class="why-join__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="why-join__card">
+                  <div class="why-join__box">
+                    <img src="img/icon-1.png" alt="icon" />
+                    <h5>Chat with attractive streamers for free</h5>
+                  </div>
+                  <p>
+                    It's an excellent web platform for streaming. Write messages to the beautiful
+                    streamers for free and explore this magical universe of communication!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="why-join__card">
+                  <div class="why-join__box">
+                    <img src="img/icon-2.png" alt="icon" />
+                    <h5>Only verified users</h5>
+                  </div>
+                  <p>
+                    We care about the privacy and security of our customers. All accounts are
+                    verified so look for an attractive stranger confidently!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="why-join__card">
+                  <div class="why-join__box">
+                    <img src="img/icon-3.png" alt="icon" />
+                    <h5>Customized search</h5>
+                  </div>
+                  <p>
+                    Match alluring partners for your own preferences. Maybe you will be interested
+                    in a hot slender European or shy beautiful Asian? Make your choice…
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="why-join__card">
+                  <div class="why-join__box">
+                    <img src="img/icon-4.png" alt="icon" />
+                    <h5>Easy to use</h5>
+                  </div>
+                  <p>
+                    Forget about hundreds of annoying notifications and inconvenient use. We have
+                    created the platform as easy to use and search as possible. Don't waste your
+                    time studying functionality. Just enjoy!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="image-mobile">
+          <img src="./img/image-4.png" alt="image" />
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="here-you">
+          <h1 class="here-you__title">Here you can find</h1>
+          <div class="here-you__box">
+            <div class="here-you__card">
+              <img src="img/icon-5.png" alt="icon" />
+              <h5>Watching streams of everyone you really like;</h5>
+            </div>
+            <div class="here-you__card">
+              <img src="img/icon-6.png" alt="icon" />
+              <h5>Free communication with pretty streamers;</h5>
+            </div>
+            <div class="here-you__card">
+              <img src="img/icon-7.png" alt="icon" />
+              <h5>Sweet connection with people you match;</h5>
+            </div>
+            <div class="here-you__card">
+              <img src="img/icon-8.png" alt="icon" />
+              <h5>New acquaintances with someone who has similar interests;</h5>
+            </div>
+            <div class="here-you__card">
+              <img src="img/icon-9.png" alt="icon" />
+              <h5>Fascinating hobbies and exciting occupations from people you fancy.</h5>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="communication">
+        <div class="container">
+          <div class="communication-text">
+            <h1 class="communication-text__title">
+              It's a universe of communication and streaming without borders!
+            </h1>
+            <p class="communication-text__subtitle">
+              Let yourself to be free – share your thoughts, delight, and fears with beautiful
+              strangers!
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper communication-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/image-1.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image-2.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image-3.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image-4.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image-5.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image-6.png" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image-7.png" alt="image" />
+            </div>
+          </div>
+        </div>
+
+        <a href="#dynamic-form" class="container btn">Join for free</a>
+      </section>
+
+      <div class="container">
+        <section class="dedicated-space">
+          <div class="dedicated-space__left">
+            <h1 class="dedicated-space__title">It's a dedicated space for your bold fantasies!</h1>
+            <p class="dedicated-space__subtitle">
+              Hundreds of attractive admirers are already waiting for you here. Don't delay – dive
+              into the world of streaming, flirting, and hot communication right now!
+            </p>
+            <a href="#dynamic-form" class="btn">Write to her</a>
+          </div>
+          <div class="dedicated-space__right">
+            <img class="dedicated-space__img" src="img/phone.png" alt="phone" />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__column">
+            <div class="footer__contact">
+              <a href="mailto:support@gmail.com">support@gmail.com</a>
+              <a href="#">Unsubscribe</a>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h3>Legal terms</h3>
+            <div class="footer__links">
+              <a href="#">Terms of Use</a>
+              <a href="#">Diclosures&Disclaimers</a>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h3>Privacy info</h3>
+            <div class="footer__links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h3>About</h3>
+            <div class="footer__links">
+              <a href="#about">About Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
